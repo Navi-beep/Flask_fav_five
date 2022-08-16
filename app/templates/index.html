@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title%} Homes {% endblock title %}
+{% block title %} Homes {% endblock title %}
 
 
 {% block content %}
@@ -10,8 +10,14 @@
 <h4>name: {{ me['name'] }} - nickname: {{ me['nickname'] }}</h4>
 
 <h5>My favorite artists:</h5>
-
-
-
+<ul>
+    {% for artist in artists %}
+        {% if artist == 'Aphex Twin' %}
+            <li>{{ artist.upper() }}</li>
+        {% else %}
+            <li>{{ artist }}</li>
+        {% endif %}
+    {% endfor %}
+</ul>
 
 {% endblock content %}
