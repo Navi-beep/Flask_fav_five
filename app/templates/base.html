@@ -13,34 +13,31 @@
     <body>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Cool Beans</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Spicy Beans</a>
-                  </li>
-                </ul>
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Cool Beans</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Spicy Beans</a></li>
+                    </ul>
               </div>
             </div>
           </nav>
 
 
-
-
-
-        <div class="container">
-            {% block content %}
+        
+        <div class="d-flex align-items-center container mt-4 text-center bg-light border border-2 rounded-bottom">
+            <div class="row w-100">
+                <div class="m-2 p-5 text-center" style="height: 350px;">
+            {% block content %} 
             {% endblock content %}
+            </div> 
+            </div>
         </div>
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>

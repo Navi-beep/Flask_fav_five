@@ -7,10 +7,10 @@
 
 <h1>Welcome to my page!</h1>
 
-<h4>name: {{ me['name'] }} - nickname: {{ me['nickname'] }}</h4>
+<h4>Here's some of my favorite stuff</h4>
 
 <h5>My favorite artists:</h5>
-<ul>
+<ul style="list-style: none;">
     {% for artist in artists %}
         {% if artist == 'Aphex Twin' %}
             <li>{{ artist.upper() }}</li>
